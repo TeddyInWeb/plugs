@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="Tencent-CP" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="Description" content="">
+    <meta name="Keywords" content="">
+    <title>demo</title>
+    <style>
+	/* reset */
+	body,div,p,ul,li,table,tbody,tr,td,textarea,form,input,h1,h2,h3,h4,h5,dl,dt,dd,img,iframe,header,nav,section,article,footer,figure,figcaption,menu{margin:0;padding:0;list-style:none;}
+	body{-webkit-text-size-adjust:none; font-size: 0.24px;}
+	header,nav,section,article,footer,figure,figcaption{display:block;}
+	h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%}
+	ol,ul{margin:0;padding:0;}
+	fieldset{border:none;margin:0;padding:0;}
+	a,li,ul,[onclick]{-webkit-tap-highlight-color:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+	table{border-collapse:collapse;border-spacing:0;}
+	em,strong{font-weight:normal;font-style:normal;}
+	a {text-decoration:none;}
+	.hide {display:block;width:0;height:0;overflow:hidden;}
+	.c:before,.c:after {content:"";display:table;}
+	.c:after {clear:both;}
+	.fl {float:left;}
+	.fr {float:right;}
+	.pr {position:relative;}
+	.pa {position:absolute;}
+	.db {display:block;text-indent:-999em;}
+	:focus{outline: none;}
+	.dn{display: none;}
+	a{cursor: pointer;}
+
+	html, body{height: 100%;}
+	.wrap{width: 100%;background: url('https://ossweb-img.qq.com/images/xiaoyue/h5/event/pc-bg.jpg') no-repeat #031d43;
+		position: relative;max-width: 800px;max-height: 600px;background-size: 100% 100%;margin: 0 auto;padding-bottom: 10px;}
+	.logo{width: 673px; height: 284px; margin: 30px auto 30px;}
+	.imgauto{display: block; height: auto; max-width: 100%; margin: 0 auto;}
+	.rule{position: absolute;top:8px;left:8px;display: inline-block; width: 90px; height: 26px; 
+		background: url('https://ossweb-img.qq.com/images/xiaoyue/h5/event/pc-rule.png') no-repeat;background-size: 100% 100%;  }
+	.bxswf{width: 65%;max-width:375px;margin: 0 auto;position: relative;margin-top: 22px;text-align: center;}
+	.lottery-content{font-size: 0;}
+	.lottery-content >li{position:relative;display: inline-block;width: 90px;
+		height: 90px;max-width: 115px;max-height: 115px;margin:0 10px 10px 0;}
+	.lottery-content >li:nth-child(3n){margin-right: 0;}
+	.lottery-content >li:nth-child(5){cursor: pointer;}
+	.lottery-content >li img{width: 100%;height: 100%;}
+	.lottery-content >li.on:after{position: absolute;top:-20px;left: -20px;display: inline-block;
+		content: ""; width: 130px;height: 130px;
+		background: url('https://ossweb-img.qq.com/images/xiaoyue/h5/event/pc-sel-on.png') no-repeat; 
+		z-index: 0;background-size: 100% 100%;
+	}
+	</style>
+</head>
+
+<body>
+    <div class="wrap">
+		<div class="bxswf">
+		<ul class="lottery-content">
+			<!--选中状态li+on-->
+			<li class="lottery-target">
+				<img src="https://ossweb-img.qq.com/images/xiaoyue/h5/event/pc-bgswf_01.png">
+			</li>
+			<li class="lottery-target">
+				<img src="https://ossweb-img.qq.com/images/xiaoyue/h5/event/pc-bgswf_02.png">
+			</li>
+			<li class="lottery-target">
+				<img src="https://ossweb-img.qq.com/images/xiaoyue/h5/event/pc-bgswf_03.png">
+			</li>
+			<li class="lottery-target">
+				<img src="https://ossweb-img.qq.com/images/xiaoyue/h5/event/pc-bgswf_04.png">
+			</li>
+			<li id="lottery-start-btn">
+				<img src="https://ossweb-img.qq.com/images/xiaoyue/h5/event/pc-bgswf_05.png">
+			</li>
+			<li class="lottery-target">
+				<img src="https://ossweb-img.qq.com/images/xiaoyue/h5/event/pc-bgswf_06.png">
+			</li>
+			<li class="lottery-target">
+				<img src="https://ossweb-img.qq.com/images/xiaoyue/h5/event/pc-bgswf_07.png">
+			</li>
+			<li class="lottery-target">
+				<img src="https://ossweb-img.qq.com/images/xiaoyue/h5/event/pc-bgswf_08.png">
+			</li>
+			<li class="lottery-target">
+				<img src="https://ossweb-img.qq.com/images/xiaoyue/h5/event/pc-bgswf_09.png">
+			</li>
+		</ul>
+		</div>
+	</div>
+	<script src="racelamp.js"></script>
+</body>
+
+</html>
